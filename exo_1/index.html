@@ -9,15 +9,14 @@
 </head>
 <body>
     <header>
-        <img src="" alt="logo de mon site">
+        <a href="index.html"><img class="logo" src="./img/logo.svg" alt="logo de mon site"></a>
     </header>
-    <main>
-        <section>
+    
+        <section class="section_presentation">
             <h1>Binaire et Hexadécimal</h1>
-            <p>Ce site est réalisé dans le cadre de l'exercice 1 du projet révision. Il permet de connaître ma date de naissance (28/12/1995) en code binaire et hexadécimal. </p>
+            <p class="para_1"><span class="span1">C</span>e site est réalisé dans le cadre de l'exercice 1 du projet révision. <span class="span2">I</span>l permet de connaître ma date de <span class="span_underline">naissance</span> (28/12/1995) en code <strong>binaire</strong> et <strong>hexadécimal</strong> . <span class="span3">L</span>es <span class="span_underline">résultats</span> sont affichés avec une légère explication afin de comprendre le calcul de ceux-ci. <span class="span4">L</span>e responsive du site est à tout épreuve, ainsi que le design qui est à la pointe, en adéquation avec les tendances actuelles</p>
         </section>
-    </main>
-    <footer>
+    <section class="section_exo">
         <article>
             <h2>Code Binaire</h2>
             <p>0111 1100 1011</p>
@@ -56,8 +55,17 @@
         </article>
         <article>
             <h2>Code Hexadécimal</h2>
-
+            <p>7CB</p>
+            <p>Explication: on sépare par bloc de 4 le binaire (on ajoute des 0 si nécessaire au premier bloc en partant de la gauche). On obtient donc :</p>
+            <p>0111 1100 1011</p>
+            <p>On fait la somme des 1 par rapport à 2 exposant n. On aura donc 0111 = 0 + 4 + 2 + 1 = 7, 1100 = 8 + 4 + 0 + 0 = 12, 1011 = 8 + 0 + 2 + 1 = 11 </p>
+            <p>Jusqu'à 9 l'hexadécimal utilise les nombres décimaux de base.</p>
+            <p>Au dessus on part sur l'alphabet en commençant par A.</p>
+            <p>7 = 7 et 11 = B</p>
         </article>
+    </section>
+    <footer>
+        <p>© Made With Love</p>
     </footer>
 </body>
 </html>
